@@ -47,6 +47,7 @@ static struct heap_node * build_full_binary_tree_rec(void *data, int nmemb,
   }
   
   node = (struct heap_node *)malloc(sizeof(struct heap_node));
+  node->data = malloc(size);
 
   //node->data = data + (*cur_dataindex)*size;
   // better to copy the data locally
